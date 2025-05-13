@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/chinabudhi123/nginx-deploy.git'
+                git branch: 'main', url: 'https://github.com/chinabudhi123/apache-webpage-deploy.git'
             }
         }
 
