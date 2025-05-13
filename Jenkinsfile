@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        TARGET_HOST = '13.234.111.161'
+        TARGET_HOST = '13.208.183.41'
         SSH_USER = 'ec2-user'
-        SSH_CREDENTIALS_ID = 'ec2-access'
+        SSH_CREDENTIALS_ID = 'Instance-access'
     }
 
     triggers {
@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/chinabudhi123/apache-webpage-deploy.git'
+                git branch: 'main', url: 'https://github.com/vaibhav0060/apache-webpage-deploy.git'
             }
         }
 
